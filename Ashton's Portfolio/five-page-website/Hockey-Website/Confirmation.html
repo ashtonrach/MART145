@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Confirmation</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Thank You for Registering!</h1>
+    <p>Your registration details have been submitted successfully.</p>
+
+    <div class="data" id="output"></div>
+
+    <a href="formtry.html">Go Back</a>
+  </div>
+
+  <script>
+    // Extract form data from URL parameters
+    const params = new URLSearchParams(window.location.search);
+    let output = "";
+    for (const [key, value] of params) {
+      output += `<strong>${key}</strong>: ${value}<br>`;
+    }
+    if (output === "") {
+      output = "No data received. Please submit the form first.";
+    }
+    document.getElementById("output").innerHTML = output;
+  </script>
+
+</body>
+</html>

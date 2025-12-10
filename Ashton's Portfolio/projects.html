@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+
+    <h2>5-Page Website</h2>
+    <p>This was my 5-page website assignment. I learned how to link pages together, stay organized with folders, and keep things simple. It was one of my first bigger projects, so it’s basic — but I’m proud of it.</p>
+    <a href="five-page-website/Hockey-Website/index.html">View Project</a>
+
+    <h2>Imagery Assignment</h2>
+    <p>Here are a couple of images I resized earlier in the course. I practiced making them load faster and cleaner without stretching them in HTML.</p>
+    <a href="imagery/resized2-image.jpg">Image 1</a>
+
+    <a href="imagery/resized1-image.jpg">Image 2</a>
+
+<h2>Bootstrap Website</h2>
+<p>This is a website I made using Bootstrap. It has a responsive navbar, cards, and a simple layout.</p>
+<a href="bootstrap-website/Bootstrap.html">View Project</a>
+
+
+    <h2>Something New: Simple jQuery</h2>
+    <p>I tried something new in this portfolio, a small jQuery effect. It’s simple, but it helped me understand how JavaScript libraries work.</p>
+
+    <button id="toggleBtn">Show/Hide Text</button>
+    <p id="toggleText">This text appears and disappears when you press the button. It’s a tiny feature, but a fun one to learn.</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#toggleBtn").click(function(){
+                $("#toggleText").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
